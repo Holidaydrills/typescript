@@ -55,7 +55,7 @@
 				return number1 + number2; 
 			}
 
-			function destroy(someParameter) {
+			function foo(someParameter) {
 				let number1 = 2;
 				let number2 = 5;
 				let result = add(number1, number2);//7
@@ -116,6 +116,23 @@
 			breadType: "What" | "White" | "Gluten Free" //union
 		}
 		let organic: "organic" = "organic"; //literal
+	</script></code></pre>
+        </section>
+        <section>
+          <h1>tsconfig.json</h1>
+          <pre><code data-line-numbers="1-13|4|5|6|7|8|9|11|12"><script type="text/template">
+  {
+    "compilerOptions": {
+      "target": "ES5", // defaults to ES3
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outFile": "../../built/local/tsc.js", //or outDir
+      "sourceMap": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }
 	</script></code></pre>
         </section>
       </div>
