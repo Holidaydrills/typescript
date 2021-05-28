@@ -1,7 +1,7 @@
 
 
 const handleRequest = () => {
-    return "Hello World!";
+    return "Hello There!";
 }
 
 exports.handleRequest = handleRequest;
