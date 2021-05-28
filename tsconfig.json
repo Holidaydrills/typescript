@@ -12,6 +12,7 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "allowJs": true,
-      "outDir": "dist"
+      "outDir": "dist",
+      "types": ["@sapui5/ts-types-esm"]
     }  
   }
