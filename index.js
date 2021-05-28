@@ -1,9 +1,10 @@
-const express = require('express')
+const express = require('express');
+const controller = require('./controller');
 const app = express();
 const port = 8000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send(controller.handleRequest());
 });
 
 app.listen(port, () => {
